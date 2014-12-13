@@ -106,19 +106,34 @@
         </axis>
       </joint>
 
+<<<<<<< HEAD
     <include name="hokuyo">
+=======
+    <include>
+>>>>>>> da812852dffbb01edec31a2a23ff23f4c5a9a060
       <uri>model://hokuyo</uri>
       <pose>-1 0.5 1.75 0 0 0</pose>
     </include>
     <joint name="hokuyo_joint" type="revolute">
-      <child>hokuyo::hokuyo_link</child>
+      <child>hokuyo::link</child>
       <parent>chassis</parent>
       <axis>
 	<xyz>0 0 1</xyz>
+<<<<<<< HEAD
       </axis>
     </joint>
 
 <!--    <include>
+=======
+	<limit>
+	  <upper>0</upper>
+	  <lower>0</lower>
+	</limit>
+      </axis>
+    </joint>
+
+    <include>
+>>>>>>> da812852dffbb01edec31a2a23ff23f4c5a9a060
       <uri>model://camera</uri>
       <pose>-1 -0.5 1.75 0 0 0</pose>
     </include>
@@ -126,9 +141,19 @@
       <child>camera::link</child>
       <parent>chassis</parent>
       <axis>
+<<<<<<< HEAD
 	<xyz>0 0 1</xyz>
       </axis>
     </joint>
 -->
+=======
+	<xyz>0 0 0</xyz>
+	<limit>
+	  <upper>0</upper>
+	  <lower>0</lower>
+	</limit>
+      </axis>
+    </joint>
+>>>>>>> da812852dffbb01edec31a2a23ff23f4c5a9a060
   </model>
 </sdf>

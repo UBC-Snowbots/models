@@ -106,7 +106,7 @@
         </axis>
       </joint>
 
-    <include name="hokuyo">
+    <include>
       <uri>model://hokuyo</uri>
       <pose>-1 0.5 1.75 0 0 0</pose>
     </include>
@@ -118,7 +118,7 @@
       </axis>
     </joint>
 
-<!--    <include>
+    <include>
       <uri>model://camera</uri>
       <pose>-1 -0.5 1.75 0 0 0</pose>
     </include>
@@ -129,6 +129,5 @@
 	<xyz>0 0 1</xyz>
       </axis>
     </joint>
--->
   </model>
 </sdf>
